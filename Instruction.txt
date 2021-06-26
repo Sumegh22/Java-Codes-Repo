@@ -1,1 +1,2 @@
 This File contains all instructions : 
+adding 1 line in the file from Git hub ui 
