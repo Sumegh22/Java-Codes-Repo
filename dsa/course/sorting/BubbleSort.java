@@ -11,8 +11,8 @@ public class BubbleSort {
     public static void sortByBubbleSort(int[] nums) {
         int size = nums.length; 
 
-        for (int j =0; j<size; j++){
-            for(int i =0;i<size-1; i++){
+        for (int j =0; j<size; j++){ // loop for iteration
+            for(int i =0;i<(size-1)-j; i++){ // loop for comparison and swap
                 if(nums[i]>nums[i+1]){
                     int temp = nums[i];
                     nums[i] = nums[i+1];
