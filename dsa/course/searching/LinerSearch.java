@@ -1,4 +1,3 @@
-package com.dsa.course.searching;
 
 public class LinerSearch {
 

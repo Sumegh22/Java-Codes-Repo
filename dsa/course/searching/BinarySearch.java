@@ -1,4 +1,3 @@
-package com.dsa.course.searching;
 
 import java.util.Arrays;
 
