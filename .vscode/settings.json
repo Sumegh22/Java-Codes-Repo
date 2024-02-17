@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "dsa/course/sorting",
-        "dsa/course/searching"
+        "dsa/course/searching",
+        "tough/coding/challanges/interview"
     ]
 }
