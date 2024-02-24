@@ -38,18 +38,17 @@ public class SelectionSort {
 
     // public static void sortByInsertionSort(int[] arr){
     //     int len = arr.length;
-    //     int maxIndex = 0;
-    //     for(int i = 0; i<len ; i++){
-
-
-    //         for(int j = 0; j<len-i; j++){
+        
+    //     for(int i = len-1; i>0 ; i--){
+    //         int maxIndex = 0;
+    //         for(int j = 1; j<len-i; j++){
     //             if (arr[j]> arr[maxIndex]){
     //                 maxIndex = j;    
     //             }
     //         }
             
-    //         int temp = arr[len-1-i];
-    //         arr[len-1-i] = arr[maxIndex];
+    //         int temp = arr[i];
+    //         arr[i] = arr[maxIndex];
     //         arr[maxIndex] = temp;
         
     //     }
