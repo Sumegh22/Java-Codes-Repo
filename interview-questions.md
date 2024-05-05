@@ -202,23 +202,23 @@ Q- About Concurrent Hash Map.
 
 -------------------------------------------
 
-Java 17 features and use case in your project
-Explain about your project and architecture ? Few questions around this ?
-What is Branching strategy ? Some scenario based questions on this and git ?
-How to handle OutOfMemoryException and StackOverFlow Issues ? What are all the approach ?
-Difference between Spring and Spring boot ?
-Bean Scope ? What is boundary of singleton bean scope ? How it is managed ?
-How Maven resolve dependency ? Suppose we have 2 dependency one is Log4j 1 and other is Log4j 2 in pom.xml, What will happen ?
-What is trade of between ordered array and unordered array ?
-Can we overload static method in java ?
-How marker interface work ? How to create custom marker interface ? How compiler handle marker interface ?
-Difference between super and this ? can we use both ?
-Scenario based questions around try cath finally and system.exit ?
-How to enable caching in spring boot ?
-How @ cacheable works ?
-How can we maintain cache synchronization in distributed environment ?
-How can we achieve transaction management ? 
-In case we are using multiple db, How to manage transaction management in spring boot ?
+1. Java 17 features and use case in your project
+2. Explain about your project and architecture ? Few questions around this ?
+3. What is Branching strategy ? Some scenario based questions on this and git ?
+4) How to handle OutOfMemoryException and StackOverFlow Issues ? What are all the approach ?
+5) Difference between Spring and Spring boot ?
+6) Bean Scope ? What is boundary of singleton bean scope ? How it is managed ?
+7. How Maven resolve dependency ? Suppose we have 2 dependency one is Log4j 1 and other is Log4j 2 in pom.xml, What will happen ?
+8. What is trade of between ordered array and unordered array ?
+9. Can we overload static method in java ?
+10. How marker interface work ? How to create custom marker interface ? How compiler handle marker interface ?
+11. Difference between super and this ? can we use both ?
+12. Scenario based questions around try cath finally and system.exit ?
+13. How to enable caching in spring boot ?
+14. How @ cacheable works ?
+15. How can we maintain cache synchronization in distributed environment ?
+16. How can we achieve transaction management ? 
+17. In case we are using multiple db, How to manage transaction management in spring boot ?
 
 --------------------------------------------------
 * What is default inmplementation of equals and hashcode method.
@@ -362,15 +362,15 @@ expectedSum= 20;
 
 ------------------------------------------------
 
-Explain last project architecture. 
-Explain security implementation in last project.
-Explain day to day tasks performed at last project.
-Explain Multithreading, explain any project related example how was it implemented.
-Executerservice in java, Write program.
-What is Future.
-Thread lifecycle, how executerservice manages threads.
-explain Synchronized keyword.
-Difference between scopes protected and private.
+1. Explain last project architecture. 
+2. Explain security implementation in last project.
+3. Explain day to day tasks performed at last project.
+4. Explain Multithreading, explain any project related example how was it implemented.
+5. Executerservice in java, Write program.
+6. What is Future.
+7. Thread lifecycle, how executerservice manages threads.
+8. explain Synchronized keyword.
+9. Difference between scopes protected and private.
 
 #Write program for below scenario.
 
@@ -389,12 +389,12 @@ Functions.
 2. Deposit function
 3. check balance
 
-Implementation should be compatible with multithreaded environment.
-Check balance function should wait for other operations to be completed before checking balance.
-Bankaccount should be immutable.
-Each function should expect user object, if user is present in list then perform the function.
-Override equals and hashcode method of User class.
-throw error for appropriate scenarios.
-Write testcases for testing the functionlity of bankaccount.
-What are checked and unchecked exceptions. Explain with examples
+* Implementation should be compatible with multithreaded environment.
+* Check balance function should wait for other operations to be completed before checking balance.
+* Bankaccount should be immutable.
+* Each function should expect user object, if user is present in list then perform the function.
+* Override equals and hashcode method of User class.
+* throw error for appropriate scenarios.
+* Write testcases for testing the functionlity of bankaccount.
+* What are checked and unchecked exceptions. Explain with examples
 
