@@ -176,6 +176,7 @@ Q- About Concurrent Hash Map.
 9. How Springboot better than spring.
 10. How Objects are saved using hibernate.
 ------------------------------------------------
+
 1.sorting list of employee with respect to age using java8
 2.JAVA 8 features
 3.Diff synch collection and concurrunt hashmap
@@ -198,7 +199,9 @@ Q- About Concurrent Hash Map.
 20.Angular JS and javascript
 21.SQL query using Group by
 22.SQL Joins 
+
 -------------------------------------------
+
 Java 17 features and use case in your project
 Explain about your project and architecture ? Few questions around this ?
 What is Branching strategy ? Some scenario based questions on this and git ?
@@ -216,6 +219,7 @@ How @ cacheable works ?
 How can we maintain cache synchronization in distributed environment ?
 How can we achieve transaction management ? 
 In case we are using multiple db, How to manage transaction management in spring boot ?
+
 --------------------------------------------------
 * What is default inmplementation of equals and hashcode method.
     
