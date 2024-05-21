@@ -4,7 +4,8 @@
 1. outer loop is for number of rows
 2. inner loop is for columns
 3. Use sout (System.out.print()) to print * or numbers in same line
-4. Use sout (System.out.println()) to add a next line wherever required
+4. Look for symmetry (optional). Count Rows and Columns and map them together to build a pattern
+5. Use sout (System.out.println()) to add a next line wherever required
 
 ```
 for (int i=0; i<n; i++){
@@ -44,3 +45,43 @@ The following pattern can be achieved by this code
    *********   
 
 ```
+----------------------------
+
+### Example 2 
+
+```
+public class Solution {
+    public static void nStarTriangle(int n) {
+        
+    for(int i = 0; i <n; i++){
+        for(int s1 = 0; s1 <i; s1++){
+            System.out.print(" ");
+        }
+
+        for(int p = ((n-i)*2)-1; p>0; p--){
+            System.out.print("*");
+        }
+
+        for(int s2 = 0; s2 <i; s2++){
+            System.out.print(" ");
+        }
+
+        System.out.println();
+
+    }
+
+    }
+}
+```
+For an input 8 it will print 
+
+    ***************
+     ************* 
+      ***********  
+       *********   
+        *******    
+         *****     
+          ***      
+           *       
+----------------------------------
+
