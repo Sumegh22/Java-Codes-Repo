@@ -14,3 +14,33 @@ for (int i=0; i<n; i++){
 System.out.println();
 }
 ```
+
+### Example
+The following pattern can be achieved by this code
+
+    public static void nStarTriangle(int n) {
+
+        for (int i = 0; i<n; i++){
+            // for white spaces
+            for(int s1 = n-i-1; s1>0; s1--){
+                System.out.print(" ");
+            }
+            for(int p =0; p<i*2+1; p++){
+                System.out.print("*");
+            }
+             // for white spaces
+            for(int s2=n-i-1; s2>0 ;s2--){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
+```
+       *       
+      ***      
+     *****     
+    *******    
+   *********   
+
+```
