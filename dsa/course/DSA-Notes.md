@@ -311,4 +311,92 @@ public class Solution {
     }
 }
 ```
+---------------------------------------
 
+### Pattern-19: Symmetric-Void Pattern
+
+- Problem Statement: Given an integer N, print the following pattern :
+  ![image](https://github.com/Sumegh22/Java-Codes-Repo/assets/84231944/e598b66e-abab-4d2a-8769-d8b0a391cfee)
+
+  Here, N = 5.
+
+Examples:
+
+Input Format: N = 3
+Result: 
+```
+******
+**  **
+*    *
+*    *
+**  **
+******
+```
+
+Input Format: N = 6
+Result:  
+```
+************
+*****  *****
+****    ****
+***      ***
+**        **
+*          *
+*          *
+**        **
+***      ***
+****    ****
+*****  *****
+************
+```
+
+- The following code would solve this problem
+
+```
+public class Solution {
+    public static void symmetry(int n) {
+        // Write your code here
+
+        int space = 0; 
+
+        for(int i =0; i<n; i++){
+
+            for(int j=1; j<=n-i; j++){
+                System.out.print("* ");
+            }
+
+            for(int j=1; j<space*2; j++){
+                System.out.print(" ");
+            }
+
+            for(int j=1; j<=n-i; j++){
+                System.out.print("* ");
+            }
+
+            space=space+2;
+            System.out.println();
+
+        }
+
+// reverse the same now 
+
+        for(int i =1; i<=n; i++){
+            
+            for(int j=1; j<=i; j++){
+                System.out.print("* ");
+            }
+
+            for(int j=space*2; j>1; j--){
+                System.out.print(" ");
+            }
+
+            for(int j=1; j<=i; j++){
+                System.out.print("* ");
+            }
+            
+            space = space-2;
+            System.out.println();
+        }
+    }
+}
+```
