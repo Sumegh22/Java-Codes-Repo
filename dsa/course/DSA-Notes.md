@@ -216,5 +216,91 @@ public class Solution {
     }
 }
 ```
+--------------------------------
 
+### Q. Pattern 11, binary triangle 
+https://takeuforward.org/pattern/pattern-11-binary-number-triangle-pattern/
+
+![image](https://github.com/Sumegh22/Java-Codes-Repo/assets/84231944/da7ae8d0-a70d-4155-89cb-2f26ea1b7442)
+
+Input Format: N = 6
+Result:   
+1
+01
+101
+0101
+10101
+010101
+
+```
+public class Solution {
+    public static void nBinaryTriangle(int n) {
+       printBinaryTriangle(n);
+    }
+
+    static void printBinaryTriangle(int n){
+        int start = 1; 
+        for(int i = 0; i<n; i++){
+            if(i%2==0){
+            start = 1;
+            } else{
+                start = 0;
+            }
+            for(int j =0; j<=i; j++){
+            System.out.print(start+" ");    
+            start = 1-start;
+            }
+            System.out.println();
+        }
+    }
+}
+```
+---------------------------
+
+### Pattern - 12: Number Crown Pattern
+https://takeuforward.org/pattern/pattern-12-number-crown-pattern/
+
+Problem Statement: Given an integer N, print the following pattern : 
+
+
+Here, N = 5.
+
+Examples:
+
+Input Format: N = 3
+Result: 
+1    1
+12  21
+123321
+
+Input Format: N = 6
+Result:   
+1          1
+12        21
+12       321
+1234    4321
+12345  54321
+123456654321
+
+```
+public class Solution {
+    public static void numberCrown(int n) {
+        for(int i =1; i<=n; i++){
+            
+            for(int n1 = 1; n1<=i; n1++){
+                System.out.print(n1+" ");
+            }
+
+            for(int s = n*2; s>1; s-=2){
+                System.out.print(" ");
+            }
+            for(int n2 = i; n2>=1; n2--){
+                System.out.print(n2+" ");
+            }
+            System.out.println();
+
+        }
+    }
+}
+```
 
