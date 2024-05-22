@@ -85,3 +85,71 @@ For an input 8 it will print
            *       
 ----------------------------------
 
+### Example 3 
+
+```
+public class Solution {
+    static void pattern1(int n){
+        for(int i = 0; i < n; i++){
+            
+            for(int s1 = n-1-i; s1 > 0; s1--){
+                System.out.print(" ");
+            }
+
+            for(int p1 =0; p1<(i*2)+1; p1++ ){
+                System.out.print("*");
+            }
+
+            for(int s2 = n-1-i; s2 > 0; s2--){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern2(int n){
+        for (int i = 0; i < n; i++){
+
+            for(int s3= 0; s3<i; s3++){
+            System.out.print(" ");    
+            }
+
+            for(int p2 = (n-i)*2 - 1; p2>0; p2--){
+                System.out.print("*");
+            }
+
+            for(int s4 = 0; s4<i; s4++){
+            System.out.print(" ");    
+            }
+
+            System.out.println();   
+        }       
+    }
+    public static void nStarDiamond(int n) {
+        // Write your code here
+        pattern1(n);
+        pattern2(n);
+    }
+    
+}
+```
+
+For an input 8 it will print 
+    
+           *       
+          ***      
+         *****     
+        *******    
+       *********   
+      ***********  
+     ************* 
+    ***************
+    ***************
+     ************* 
+      ***********  
+       *********   
+        *******    
+         *****     
+          ***      
+           * 
+---------------------------------
+
