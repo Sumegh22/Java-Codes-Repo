@@ -225,12 +225,14 @@ https://takeuforward.org/pattern/pattern-11-binary-number-triangle-pattern/
 
 Input Format: N = 6
 Result:   
+```
 1
 01
 101
 0101
 10101
 010101
+```
 
 ```
 public class Solution {
@@ -258,6 +260,8 @@ public class Solution {
 ---------------------------
 
 ### Pattern - 12: Number Crown Pattern
+![image](https://github.com/Sumegh22/Java-Codes-Repo/assets/84231944/8f7b98bf-3423-4291-a319-4617bc842954)
+
 https://takeuforward.org/pattern/pattern-12-number-crown-pattern/
 
 Problem Statement: Given an integer N, print the following pattern : 
@@ -269,18 +273,22 @@ Examples:
 
 Input Format: N = 3
 Result: 
+```
 1    1
 12  21
 123321
+```
 
 Input Format: N = 6
 Result:   
+```
 1          1
 12        21
 12       321
 1234    4321
 12345  54321
 123456654321
+```
 
 ```
 public class Solution {
