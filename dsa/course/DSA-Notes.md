@@ -16,8 +16,19 @@ System.out.println();
 }
 ```
 
-### Example
-The following pattern can be achieved by this code
+### Q1. * Pyramid 
+ref : https://takeuforward.org/pattern/pattern-7-star-pyramid/
+
+```
+       *       
+      ***      
+     *****     
+    *******    
+   *********   
+
+```
+
+Thsis  pattern can be achieved by following code -> input = 5
 
     public static void nStarTriangle(int n) {
 
@@ -37,18 +48,23 @@ The following pattern can be achieved by this code
         }
     }
 
-```
-       *       
-      ***      
-     *****     
-    *******    
-   *********   
 
-```
 ----------------------------
 
-### Example 2 
+### Q2.  Reverse Pyramid
+https://takeuforward.org/pattern/pattern-8-inverted-star-pyramid/
+For an input 8 it should print 
 
+    ***************
+     ************* 
+      ***********  
+       *********   
+        *******    
+         *****     
+          ***      
+           *    
+
+The following code can achieve desired result
 ```
 public class Solution {
     public static void nStarTriangle(int n) {
@@ -73,8 +89,19 @@ public class Solution {
     }
 }
 ```
-For an input 8 it will print 
+   
+----------------------------------
 
+### Q2 print diamond of " * " : https://takeuforward.org/pattern/pattern-9-diamond-star-pattern/
+
+           *       
+          ***      
+         *****     
+        *******    
+       *********   
+      ***********  
+     ************* 
+    ***************
     ***************
      ************* 
       ***********  
@@ -82,12 +109,12 @@ For an input 8 it will print
         *******    
          *****     
           ***      
-           *       
-----------------------------------
+           * 
 
-### Example 3 
 
+Following code will achive the pattern for an input 8 
 ```
+
 public class Solution {
     static void pattern1(int n){
         for(int i = 0; i < n; i++){
@@ -133,23 +160,61 @@ public class Solution {
 }
 ```
 
-For an input 8 it will print 
+
     
-           *       
-          ***      
-         *****     
-        *******    
-       *********   
-      ***********  
-     ************* 
-    ***************
-    ***************
-     ************* 
-      ***********  
-       *********   
-        *******    
-         *****     
-          ***      
-           * 
 ---------------------------------
+
+## Q 3
+
+Prints the below pattern : https://takeuforward.org/pattern/pattern-10-half-diamond-star-pattern/
+```
+*
+**
+***
+****
+*****
+******
+*****
+****
+***
+**
+*
+```
+
+This Half symmetric diamond will be printed by below code for an input 6
+
+```
+public class Solution {
+    public static void nStarTriangle(int n) {
+    
+    printPattern1(n);
+    printPattern2(n-1);
+    }
+
+    static void printPattern1(int n){
+        for(int i = 0; i<n; i++){
+            for(int p = 0; p<=i; p++){
+                System.out.print("*");
+            }
+            for(int s = n-1-i; s>0; s--){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+
+    }
+    static void printPattern2(int n){
+        for(int i = 0; i<n; i++){
+            for(int p=n-i; p>0; p--){
+                System.out.print("*");
+            }
+            for(int s =0; s<=i; s++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
 
