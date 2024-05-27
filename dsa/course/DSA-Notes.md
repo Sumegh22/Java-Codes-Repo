@@ -400,3 +400,45 @@ public class Solution {
     }
 }
 ```
+---------------------
+
+# Basics Maths for Problem Solving
+
+## Reverse a Number
+1. Given an integer x
+   
+```
+class Solution{
+   reverseAnyNumber(x) {
+      int temp = x // store this number temporarily if needed
+      int rev = 0;
+      while(temp!=0){
+        rev = rev*10 + temp%10;
+        temp= temp/10;
+      }
+
+    return rev;
+   }
+}
+```
+2. To check palindrome
+```
+class Solution {
+    public boolean isPalindrome(int x) {
+      int input = x;    
+      if (x <0){
+          return false;
+      }
+      int rev = 0;
+      while(x!=0){
+          int ld = x%10;
+          rev = rev*10 + ld;
+          x = x/10;
+      }
+      // System.out.println("x="+input+" and reverse="+rev);
+      return (rev == input);
+    }
+}
+```
+
+
